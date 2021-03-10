@@ -1,0 +1,29 @@
+
+.justify-content-custom {
+    justify-content: flex-end !important;
+}
+
+.text-media-body-custom {
+    padding-left: 0px;
+    padding-bottom: 1rem ;
+}
+
+.bg-white {
+    background-color: #f8f9fa !important;
+}
+
+@media (max-width: 768px) {
+    .text-media-body-custom {
+        padding-left: 13px;
+        padding-bottom: 0rem !important;
+    }
+
+    .justify-content-custom {
+        justify-content: flex-start !important;
+        margin-left: 1px;
+    }
+
+    .div-agenda {
+        margin: 1rem !important;
+    }
+}

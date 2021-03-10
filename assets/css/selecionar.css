@@ -1,0 +1,91 @@
+
+
+
+.label-custom, .div-span {
+    position: relative;
+}
+
+.label-custom {
+    display: block;
+    width: 100%;
+}
+
+.span-custom {
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    left: 16px;
+    transition: color .2s cubic-bezier(.2,0,.4,1);
+    color: #9e9ea0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+    .span-custom ~ .selecionar-custom {
+        padding-top: 24px;
+    }
+
+.selecionar-custom {
+    display: block;
+    width: 100%;
+    min-height: 56px;
+    padding: 8px 32px 8px 16px;
+    border: 1px solid rgba(32,33,37,.12);
+    border-radius: 8px;
+    background-color: #fff;
+    color: #202125;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+._1qCONy- {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity .2s cubic-bezier(.2,0,.4,1),border .2s cubic-bezier(.2,0,.4,1);
+    border: 2px solid #202125;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.div-svg {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    opacity: .6;
+    color: #202125;
+    pointer-events: none;
+}
+
+.svg-custom, .svg-custom svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+}
+
+
+.filtros {
+    display: flex;
+    position: relative;
+    z-index: 5;
+}
+
+@media screen and (min-width: 768px) {
+    .filtros {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

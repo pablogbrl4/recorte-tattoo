@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Tattoo</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../../assets/img/favicon.jpg" rel="icon">
+    <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+
+    <!-- Css Para Cortar Foto -->
+    <link href="../../css/jquery.Jcrop.min.css" rel="stylesheet" />
+</head>
+
+
+<body id="page-top" class="bg-white">
+
+    <!-- ======= Header/ Navbar ======= -->
+    <nav class=" navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" href="../../home.html">TATTOO</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                    aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="home.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="tatuagens.html">Tatuagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="fotos-estudio.html">Fotos do Estúdio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="shoppings.html">Shopping</a>
+                    </li>
+                </ul>
+                <!--COMPONENTE DE LOGIN-->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Minha conta </a>
+                        <div class="dropdown-menu m-0 p-0">
+                            <a class="dropdown-item" title="Manage" style="display: flex; cursor: pointer; text-decoration: none;">
+                                <div style="display: flex; flex-direction: column; -webkit-box-pack: center; justify-content: center; -webkit-box-flex: 1; flex-grow: 1; margin-left: 16px; margin-right: 16px; padding: 5px 0px;">
+                                    <span tag="span" weight="regular" font-weight="400"
+                                          style=" color: #fa8e00;">
+                                        Nome Usuário
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider py-0 m-0 mx-3"></div>
+
+                            <a class="dropdown-item py-3 m-0" href="#">Notificações</a>
+                            <a class="dropdown-item py-3 m-0" href="estudio.html">Meu Cadastro</a>
+                            <a class="dropdown-item py-3 m-0" href="tatuadores.html">Tatuadores do Estúdio</a>
+                            <a class="dropdown-item py-3 m-0" href="contrato.html">Contrato</a>
+
+                            <form id="logoutForm" class="form-inline">
+                                <button id="logout" type="submit" class="dropdown-item py-3 m-0">Sair</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======= Main ======= -->
+    <main id="main" class="content">
+
+        <link href="../../assets/css/navdark.css" rel="stylesheet">
+        <link href="../../assets/css/addbutton.css" rel="stylesheet">
+        <link href="../../assets/css/selecionar.css" rel="stylesheet">
+        <link href="../../assets/css/tatuagens.css" rel="stylesheet">
+
+        <style>
+
+            .card {
+                margin-bottom: .75rem !important;
+            }
+
+            .card-columns .card {
+                display: inline-block;
+                width: auto;
+            }
+        </style>
+
+        <div class="bg-white container my-10 card-columns-tatto">
+
+            <div class="card card-default p-0 m-0 adicionar-web-custom mb-2">
+                <div class="row card-body p-0 m-0">
+                    <a href="shopping.html" class="btn btn-outline-primary btn-lg">
+                    Adicionar novo Produto 
+                    <i class="ion-android-add btn-primary-add p-2"></i> </a>
+                </div>
+            </div>
+
+            <form>
+
+                <div class="row">
+
+                    <div id="selecionar" class="col-lg-5">
+                        <label class="label-custom">
+                            <div class="div-span">
+                                <span class="span-custom">Tipos</span>
+                                <select class="selecionar-custom" name="pesquisa">
+                                    <option value="Todos">Todos</option>
+                                    <option value="Camiseta">Camiseta</option>
+                                    <option value="Pingente">Pingente</option>
+                                    <option value="Mascara">Mascara</option>
+                                    <option value="Piercing">Piercing</option>
+                                    <option value="Bermuda">Bermuda</option>
+                                    <option value="Brinco">Brinco</option>
+                                    <option value="Alargador">Alargador</option>
+                                    <option value="Outros Produtos">Outros Produtos</option>
+                                </select>
+                                <div class="_1qCONy-"></div>
+
+                                <div class="div-svg">
+                                    <svg class="svg-custom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17">
+                                            <path fill-rule="evenodd"
+                                                  d="M7.293 10.293L3.707 6.707A1 1 0 014.414 5h7.172a1 1 0 01.707 1.707l-3.586 3.586a1 1 0 01-1.414 0z">
+                                            </path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="input-group-append col-lg-1 pb-2">
+                        <button class="btn btn-primary rounded-circle mx-2 my-1 btn-lg btn-info" type="submit">
+                            <i class="ion-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+
+            <br />
+
+            <div class="card-columns">
+
+                <div class="card mx-1">
+                    <img class="card-img-top" src="../../images/estudio/shooping/1.jpg" alt="Card image cap">
+                    <div class="row a-foto-custom" style="margin-right: 0px; margin-left: 0px;">
+                        <a href="shopping.html" class="btn btn-outline-primary btn-lg col-lg-6">Editar</a>
+                        <a class="btn btn-outline-danger btn-lg col-lg-6">Deletar</a>
+                    </div>
+                </div>
+
+                <div class="card mx-1">
+                    <img class="card-img-top" src="../../images/estudio/shooping/2.jpg" alt="Card image cap">
+                    <div class="row a-foto-custom" style="margin-right: 0px; margin-left: 0px;">
+                        <a href="shopping.html" class="btn btn-outline-primary btn-lg col-lg-6">Editar</a>
+                        <a class="btn btn-outline-danger btn-lg col-lg-6">Deletar</a>
+                    </div>
+                </div>
+
+                <div class="card mx-1">
+                    <img class="card-img-top" src="../../images/estudio/shooping/3.jpg" alt="Card image cap">
+                    <div class="row a-foto-custom" style="margin-right: 0px; margin-left: 0px;">
+                        <a href="shopping.html" class="btn btn-outline-primary btn-lg col-lg-6">Editar</a>
+                        <a class="btn btn-outline-danger btn-lg col-lg-6">Deletar</a>
+                    </div>
+                </div>
+
+                <div class="card mx-1">
+                    <img class="card-img-top" src="../../images/estudio/shooping/4.jpg" alt="Card image cap">
+                    <div class="row a-foto-custom" style="margin-right: 0px; margin-left: 0px;">
+                        <a href="shopping.html" class="btn btn-outline-primary btn-lg col-lg-6">Editar</a>
+                        <a class="btn btn-outline-danger btn-lg col-lg-6">Deletar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="btn-add">
+            <a> <i class="ion-android-add btn-primary-add btn-new-custom"></i> </a>
+        </div>
+
+        <br />
+        <br />
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+        <br>
+        <div class="container text-left">
+            <div class="row  pb-3">
+                <div class="col-lg-6 pt-3">
+                    <div>
+                        <h3>TATTOO</h3>
+                        <p>Site Voltado Para Conexão Entre Estúdios de Tatuagens e Seus Clientes.</p>
+                    </div>
+                    <div class="socials">
+                        <ul>
+
+                            <li><a href=""><span class="ico-circle-custom"><i class="ion-social-facebook"></i></span></a></li>
+                            <li><a href=""><span class="ico-circle-custom"><i class="ion-social-instagram"></i></span></a></li>
+                            <li><a href=""><span class="ico-circle-custom"><i class="ion-social-twitter"></i></span></a></li>
+                            <li><a href=""><span class="ico-circle-custom"><i class="ion-social-pinterest"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 pt-3">
+                    <h3>Contato</h3>
+                    <p>(31) 9 9668-8172</p>
+                    <p>tattoo@gmail.com</p>
+                    <p>Belo Horizonte, Minas Gerais, Brasil</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 text-left">
+                        <ul style="padding: 0; margin: 0;">
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Privacidade</a></li>
+                            <li><a href="#">Politica ambiental</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-left letra-pequena">
+                            <p>
+                                Tattoo �
+                                Todos os direitos reservados
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End  Footer -->
+    <!-- Vendor JS Files -->
+    <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../../assets/vendor/counterup/jquery.counterup.min.js"></script>
+    <script src="../../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../../assets/vendor/typed.js/typed.min.js"></script>
+    <script src="../../assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/navbar.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+
+</body>
+
+</html>

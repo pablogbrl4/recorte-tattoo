@@ -1,0 +1,47 @@
+.modal-custom-click {
+    font-family: Inter,Lato,Open Sans,Corbel,Arial,sans-serif;
+}
+
+.bold-custom {
+    color: #000;
+    font-weight: 600;
+}
+
+._2LoZB5t, ._2LoZB5t svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+}
+
+    ._2LoZB5t svg {
+        background-color: transparent;
+        fill: currentColor;
+        font-size: inherit;
+        vertical-align: middle;
+    }
+
+._15c72fq {
+    border: 0;
+    border-color: white;
+    top: 0;
+    right: 0;
+    padding-bottom: 0;
+    padding-top: 10px;
+    border-radius: 0;
+    background: transparent;
+    font-size: 24px;
+}
+
+    ._15c72fq:checked {
+        border: 0;
+    }
+
+    ._15c72fq::selection {
+        border: 0;
+    }
+
+@media (min-width: 992px) {
+    .modal-lg, .modal-xl {
+        max-width: 1000px !important;
+    }
+}

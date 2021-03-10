@@ -1,0 +1,21 @@
+.navbar-trans {
+    background-color: #000000 ;
+}
+
+.navbar-reduce .btn-custom-nav {
+    color: #000000 ;
+    background-color: transparent ;
+    border-color: #000000 ;
+}
+
+.btn-custom-nav {
+    color: #ffffff ;
+    background-color: transparent ;
+    border-color: #ffffff ;
+}
+
+    .btn-custom-nav:hover {
+        color: #ffffff ;
+        background-color: #3a3a3a ;
+        border-color: #3a3a3a ;
+    }

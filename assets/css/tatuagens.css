@@ -1,0 +1,49 @@
+
+.card-columns {
+    column-count: 4;
+}
+
+.navbar-trans {
+    background-color: #000000;
+}
+
+.navbar-reduce .btn-custom-nav {
+    color: #000000 !important;
+    background-color: transparent !important;
+    border-color: #000000 !important;
+}
+
+.btn-custom-nav {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border-color: #ffffff !important;
+}
+
+.btn-custom-nav:hover {
+    color: #ffffff !important;
+    background-color: #3a3a3a;
+    border-color: #3a3a3a;
+}
+
+@media screen and (max-width: 824px) {
+    .card-columns {
+        column-count: 3;
+    }
+
+    .card-columns .card {
+        margin-bottom: .1rem;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    .card-img, .card-img-bottom, .card-img-top {
+        width: 100%;
+    }
+
+
+    .card-columns-tatto .card-columns {
+        column-count: 2 !important;
+    }
+
+}
+
