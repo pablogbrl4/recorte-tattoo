@@ -126,7 +126,7 @@ user agent stylesheet ul {
 }
 
 .li-estados {
-    display: block;
+    display: contents;
     float: none;
     line-height: 14.004px;
     font-weight: 400;
@@ -136,12 +136,19 @@ user agent stylesheet ul {
 }
 
 .a-estados {
-    color: rgb(51, 136, 187);
+    color: rgb(51, 136, 187) !important;
     font-size: 12px;
     font-weight: 700;
     font-family: Arial;
     cursor: pointer;
     text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+.a-estados:hover {
+    color: rgb(0, 30, 49) !important;
+    border: none !important;
 }
 
 .li-tags-2 {
