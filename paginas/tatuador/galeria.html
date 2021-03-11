@@ -47,13 +47,13 @@
                         <a class="nav-link js-scroll" href="home.html">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="home.html">Sobre</a>
+                        <a class="nav-link js-scroll" href="home.html#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="galeria.html">Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="home.html">Contato</a>
+                        <a class="nav-link js-scroll" href="home.html#localizacao">Contato</a>
                     </li>
                 </ul>
                 <!--COMPONENTE DE LOGIN-->
@@ -71,6 +71,7 @@
         <link href="../../assets/css/index.css" rel="stylesheet">
         <link href="../../assets/css/navdark.css" rel="stylesheet">
         <link href="../../assets/css/tatuagens.css" rel="stylesheet">
+        <link href="../../assets/css/modal.css" rel="stylesheet">
 
         <section id="galeria" class="my-10">
             <div class="bg-white container">
@@ -89,45 +90,102 @@
                     </div>
                 </div>
 
-                <div class="">
-                    <div class="card-columns">
-
-                        <a>
-                            <div class="card">
-                                <img class="card-img-top" src="../../images/tatuagens/1.jpg" alt="Card image cap">
+                <div class="cont-container">
+                    <div class="bg-white container">
+                        <div class="card-columns">
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/tatuagens/1.jpg" alt="Card image cap">
+                                </div>
+                            </a>
+    
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/tatuagens/2.jpg" alt="Card image cap">
+                                </div>
+                            </a>
+    
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/tatuagens/3.jpg" alt="Card image cap">
+                                </div>
+                            </a>
+    
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/tatuagens/4.jpg" alt="Card image cap">
+                                </div>
+                            </a>
+    
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/tatuagens/5.jpg" alt="Card image cap">
+                                </div>
+                            </a>
+    
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/tatuagens/6.jpg" alt="Card image cap">
+                                </div>
+                            </a>
+    
+                        </div>
+    
+                        <div class="modal fade bd-example-modal-lg modal-custom-click" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content row" style="flex-direction: row;">
+                                    <div class="col-7 pl-0">
+                                        <!-- Aqui tem que fazer a referência da imagem clicada para ela aparecer -->
+                                        <img src="../../images/estudio/" class="img-fluid " id="someImage">
+                                    </div>
+                                    <div class="col-5 ">
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="_15c72fq" data-dismiss="modal" aria-label="Close">
+                                                <svg class="_2LoZB5t"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path id="a" d="M12.207 10.793L20 3l1.414 1.414-7.793 7.793L21.414 20 20 21.414l-7.793-7.793-7.793 7.793L3 20l7.793-7.793L3 4.414 4.414 3l7.793 7.793z"></path></svg></svg></button>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-lg-1 text-center">
+                                                <img alt="32x32" class="mr-2 rounded-circle mt-2"
+                                                     src="../../images/icone-perfil.jpg"
+                                                     data-holder-rendered="true" style="width: 30px; height: 30px;">
+                                            </div>
+                                            <div class="col-lg-6 pt-2 ml-2">
+                                                <span class="bold-custom">
+                                                    Autor
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="">
+                                                In honor of 🌹Dia De Los Muertos 🌹(part healed, part fresh) #diadelosmuertos #dayofthedead #dayofthedeadtattoo
+                                            </span>
+                                        </div>
+    
+                                        <hr />
+    
+                                        <h5>Feito por</h5>
+                                        <div class="row mb-2">
+                                            <div class="col-lg-1 text-center">
+                                                <img alt="32x32" class="mr-2 rounded-circle mt-2"
+                                                     src="../../images/icone-perfil.jpg"
+                                                     data-holder-rendered="true" style="width: 30px; height: 30px;">
+                                            </div>
+                                            <div class="col-lg-6 pt-2 ml-2">
+                                                <span class="bold-custom">
+                                                    Tatuadorrrrrrrrrrrr
+                                                </span>
+                                            </div>
+                                        </div>
+    
+                                        <hr />
+    
+                                        <h5>Tipo</h5>
+                                        <p>os tipos da foto</p>
+    
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-
-                        <a>
-                            <div class="card">
-                                <img class="card-img-top" src="../../images/tatuagens/2.jpg" alt="Card image cap">
-                            </div>
-                        </a>
-
-                        <a>
-                            <div class="card">
-                                <img class="card-img-top" src="../../images/tatuagens/3.jpg" alt="Card image cap">
-                            </div>
-                        </a>
-
-                        <a>
-                            <div class="card">
-                                <img class="card-img-top" src="../../images/tatuagens/4.jpg" alt="Card image cap">
-                            </div>
-                        </a>
-
-                        <a>
-                            <div class="card">
-                                <img class="card-img-top" src="../../images/tatuagens/5.jpg" alt="Card image cap">
-                            </div>
-                        </a>
-
-                        <a>
-                            <div class="card">
-                                <img class="card-img-top" src="../../images/tatuagens/6.jpg" alt="Card image cap">
-                            </div>
-                        </a>
-
+                        </div>
                     </div>
                 </div>
             </div>
