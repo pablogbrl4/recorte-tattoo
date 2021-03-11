@@ -93,37 +93,37 @@
                 <div class="cont-container">
                     <div class="bg-white container">
                         <div class="card-columns">
-                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('1', '@foto.IdEstudio')">
                                 <div class="card">
                                     <img class="card-img-top" src="../../images/tatuagens/1.jpg" alt="Card image cap">
                                 </div>
                             </a>
     
-                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('2', '@foto.IdEstudio')">
                                 <div class="card">
                                     <img class="card-img-top" src="../../images/tatuagens/2.jpg" alt="Card image cap">
                                 </div>
                             </a>
     
-                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('3', '@foto.IdEstudio')">
                                 <div class="card">
                                     <img class="card-img-top" src="../../images/tatuagens/3.jpg" alt="Card image cap">
                                 </div>
                             </a>
     
-                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('4', '@foto.IdEstudio')">
                                 <div class="card">
                                     <img class="card-img-top" src="../../images/tatuagens/4.jpg" alt="Card image cap">
                                 </div>
                             </a>
     
-                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('5', '@foto.IdEstudio')">
                                 <div class="card">
                                     <img class="card-img-top" src="../../images/tatuagens/5.jpg" alt="Card image cap">
                                 </div>
                             </a>
     
-                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('@foto.ImageName', '@foto.IdEstudio')">
+                            <a data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;" onclick="setIds('6', '@foto.IdEstudio')">
                                 <div class="card">
                                     <img class="card-img-top" src="../../images/tatuagens/6.jpg" alt="Card image cap">
                                 </div>
@@ -191,6 +191,19 @@
             </div>
         </section>
 
+        <script>
+            function setIds(nomeFoto, idEstudio) {
+                document.getElementById("someImage").src = "../../images/tatuagens/" + nomeFoto + ".jpg";
+                // document.getElementById("someImage").src = "../../images/tatuagens/" + idEstudio + "/" + nomeFoto + ".jpg";
+            }
+
+            function verificaUrl(url) {
+                var http = new XMLHttpRequest();
+                http.open('HEAD', url, false);
+                http.send();
+                return http.status != 404;
+            }
+        </script>
 
     </main><!-- End #main -->
     <!-- ======= Footer ======= -->
